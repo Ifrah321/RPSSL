@@ -2,8 +2,11 @@ Velkommen til Sten, Saks, Papir, Øgler, Spock!
 Vælg mellem: sten, saks, papir, øgler, spock
 
 Dit valg: sten
+
 Computeren vælger: papir
+
 Computeren vinder denne runde!
+
 Stilling: Du 0 - 1 Computer
 
 Dit valg: spock
