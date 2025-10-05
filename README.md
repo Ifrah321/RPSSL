@@ -1,7 +1,7 @@
 Velkommen til Sten, Saks, Papir, Øgler, Spock!
 Vælg mellem: sten, saks, papir, øgler, spock
 
-Dit valg: sten
+Dit valg: sten -> 
 
 Computeren vælger: papir
 
