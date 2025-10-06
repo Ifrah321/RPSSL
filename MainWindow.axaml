@@ -1,0 +1,53 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AvaloniaApplicationRPSSL.MainWindow"
+        Title="RPSSL – Først til 3"
+        Width="520" Height="340">
+  
+  <Grid RowDefinitions="Auto,Auto,*,Auto" ColumnDefinitions="*">
+    
+    <TextBlock Grid.Row="0"
+               Margin="16,12,16,6"
+               FontSize="20"
+               FontWeight="Bold"
+               Text="Rock • Paper • Scissors • Lizard • Spock"/>
+    
+    <Grid Grid.Row="1" Margin="16,0,16,10" ColumnDefinitions="*,*">
+      <StackPanel>
+        <TextBlock Text="Status:" FontWeight="SemiBold"/>
+        <TextBlock x:Name="RoundText" Text="Klik en knap for at starte…" />
+      </StackPanel>
+
+      <StackPanel Grid.Column="1">
+        <TextBlock Text="Score:" FontWeight="SemiBold"/>
+        <TextBlock x:Name="ScoreText" Text="Du: 0   |   Agent: 0"/>
+      </StackPanel>
+    </Grid>
+    
+    <Border Grid.Row="2" Margin="16" Padding="12" BorderBrush="#DDD" BorderThickness="1" CornerRadius="8">
+      <StackPanel>
+        <TextBlock Text="Vælg din form:"/>
+    
+        <UniformGrid Rows="1" Columns="5" Margin="0,8,0,6">
+          <Button x:Name="BtnRock"     Content="Rock"     Margin="4,0"/>
+          <Button x:Name="BtnPaper"    Content="Paper"    Margin="4,0"/>
+          <Button x:Name="BtnScissors" Content="Scissors" Margin="4,0"/>
+          <Button x:Name="BtnLizard"   Content="Lizard"   Margin="4,0"/>
+          <Button x:Name="BtnSpock"    Content="Spock"    Margin="4,0"/>
+        </UniformGrid>
+
+        <Separator/>
+        <TextBlock x:Name="ChoicesText" Margin="0,6,0,0" Text="Du: –   |   Agent: –"/>
+      </StackPanel>
+    </Border>
+    <StackPanel Grid.Row="3"
+                Orientation="Horizontal"
+                HorizontalAlignment="Right"
+                Margin="16,0,16,12"
+                Spacing="8">
+      <Button x:Name="BtnReset" Content="Nulstil"/>
+      <Button x:Name="BtnClose" Content="Luk"/>
+    </StackPanel>
+
+  </Grid>
+</Window>
